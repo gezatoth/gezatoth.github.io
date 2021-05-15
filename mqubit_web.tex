@@ -1,0 +1,159 @@
+\documentclass[pra,amsmath,amssymb]{revtex4}
+
+\usepackage{graphics}
+
+\usepackage{epsfig}
+
+\usepackage{bbm}
+
+\newcommand{\bra}[1]{\ensuremath{\left\langle{#1}\right\vert}}
+\newcommand{\braket}[1]{\ensuremath{\left\langle{#1}\right\rangle}}
+\newcommand{\ket}[1]{\ensuremath{\left|{#1}\right\rangle}}
+\newcommand{\ad}{\ensuremath{a^\dagger}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\eea{\end{eqnarray}}
+\def\bea{\begin{eqnarray}}
+\newcommand{\bd}{\ensuremath{b^\dagger}}
+\newcommand{\va}[1]{\ensuremath{(\Delta#1)^2}}
+\newcommand{\varho}[1]{\ensuremath{(\Delta_\rho #1)^2}}
+\newcommand{\ex}[1]{\ensuremath{\left\langle{#1}\right\rangle}}
+\newcommand{\exrho}[1]{\ensuremath{\left\langle{#1}\right\rangle}_{\rho}}
+\newcommand{\exs}[1]{\ensuremath{\langle{#1}\rangle}}
+\newcommand{\eins}{\ensuremath{\mathbbm 1}}
+
+\begin{document}
+\title{Entanglement witnesses for detecting multi-qubit entanglement of many
+  qubits\\(Motivations for quant-ph/0405165)}
+
+%\author{G\'eza T\'oth (MPQ) and Otfried G\"uhne (Innsbruck)}
+
+\maketitle
+
+Quantum entanglement has been in the center of attention for
+quantum physicist for more than half a century. Bell inequalities 
+\cite{B64,M90,GB98}
+provide a very insightful approach for detecting an important
+characteristic arising from entanglement: non-locality. If a Bell
+inequality is violated for an experiment, then it means that the
+measurement results cannot be explained with a local hidden
+variable theory.
+
+Bell inequalities have two uses: (i) they demonstrate that quantum
+mechanics as a theory is nonlocal. (ii) They prove that the
+quantum state created in the experiment is entangled. Every state
+violating a Bell inequality for some choice of observables  is
+entangled. However, not all entangled states violate a Bell
+inequality \cite{W89}. Thus there are entangled states which allow for a
+local hidden variable model.
+
+In the recent years powerful tools for detecting quantum
+entanglement were developed: {\it entanglement witnesses} \cite{HH90}. These,
+in principle, make possible detecting any entangled states. Unlike
+Bell inequalities (which are classical), they use quantum
+mechanics for obtaining conditions for entanglement. This is the
+reason why in many situations {\it much fewer} measurements are
+sufficient for entanglement detection than with Bell inequalities.
+
+Let us provide a simple example. The well-known CHSH inequality
+detects entangled states close to the state
+$\Psi=(\ket{00}+\ket{11})/\sqrt{2}$. It requires measuring the
+spin components $x$ and $y$ for both qubits. The CHSH inequality
+claims that for states with local hidden variable model \be
+\exs{x_1x_2}+\exs{y_1y_2}+\exs{x_1y_2}-\exs{y_1x_2}\le 2, \label{CHSH} \ee 
+where $\exs{...}$ denotes expectation value.
+The maximum
+for local hidden variable models can be obtained by trying all the
+$16$ possible combinations of $x_1,y_1,x_2,y_2=\pm 1$. The quantum
+maximum of Eq. (\ref{CHSH}) is $2\sqrt{2}$.
+Thus in an experiment the visibility must be
+at least $2/(2\sqrt{2})\approx 70\%$
+
+How can one see that Bell inequalities do not use quantum
+mechanics? For example, they consider $\exs{x_k}=\exs{y_k}=+1$ a possible
+measurement outcome. But from quantum mechanics we know that
+$\exs{x_k}^2+\exs{y_k}^2\le 1$. That is, the maximal length of 
+a Bloch vector is one.
+If we use this knowledge then a much
+simpler condition can be obtained. So for separable (not entangled)
+states \be \exs{x_1x_2}+\exs{y_1y_2}\le 1.\label{ew}\ee 
+This can be proved using that for product sates
+$\exs{x_1x_2}+\exs{y_1y_2}=
+\exs{x_1}\exs{x_2}+\exs{y_1}\exs{y_2}$.
+The condition given in Eq. (\ref{ew}) is basically an
+entanglement witness. If it is violated then the state is entangled.
+Here the quantum maximum is $2$. Thus the
+robustness of this condition is larger: it requires only
+$50\%$ visibility in an experiment. Other advantage: only two
+measurement settings are needed instead of four.
+
+In the multi-qubit case the situation is the following \cite{GB98}. Let us
+consider GHZ states for simplicity \cite{GH90}. 
+The Mermin inequality \cite{M90} can be
+used for entanglement detection around GHZ states. It also
+requires detecting $x$ and $y$ for each qubit. The condition for
+local hidden variable models for $n$ qubits is given as \bea
+&&\exs{x_1x_2x_3x_4 \cdot \cdot \cdot
+x_{N-1}x_{N}}\nonumber\\
+&-&\exs{ y_{1}y_{2}x_{3}x_{4} \cdot \cdot \cdot x_{N-1}x_{N}}\nonumber\\
+&+&\exs{y_{1}y_{2}y_{3}y_{4}\cdot \cdot \cdot x_{N-1}x_{N}}\nonumber\\
+&-& ... \nonumber\\
+&+&\exs{ y_{1}y_{2}y_{3}y_{4} \cdot \cdot \cdot
+y_{N-1}y_{N}}\nonumber\\&\le& 2^{\lfloor n/2\rfloor},\eea where
+$\lfloor x\rfloor$ denotes integer part. Here each term represents
+the sum of all its possible permutations. Very many measurements
+... What actually matters, is not the number of terms, but the
+number of measurement settings. Here each term needs a separate
+setting. That is, there are no two terms which could be measured
+with the same setting.
+
+%What does this inequality tells as if it is violated? It tells us
+%that the system is entangled. But for a system of many spins
+%(qubits) this is not enough information. Maybe only two qubit were
+%entangled with each other and the rest stays in a product state.
+%Because of that, conditions for detecting {\it genunie multi-party
+%entanglement} were developed \cite{GB98}. 
+%They require a higher bound for the
+%violation of local realism. 
+
+After the long introduction we reached the main point. It is
+possible to design much more efficient 
+conditions for entanglement using entanglement witnesses.
+These detect multi-qubit entanglement with much much fewer
+settings. In fact, they need only two settings. This is a
+surprise. It is possible since the states most often considered in
+quantum information (GHZ states, cluster states) are so-called
+{\it stabilizer states}. Thus stabilizer theory, already very much used
+in quantum error correction, can also be used for detecting
+entanglement. For details please see Ref. \cite{TG04}.
+\begin{thebibliography}{99}
+% Bell inequalities
+\bibitem{B64} J.S. Bell, Physics (Long Island City, N.Y.) {\bf 1}, 195 (1964).
+\bibitem{M90} N.D. Mermin, Phys. Rev. Lett. {\bf 65}, 1838 (1990).
+\bibitem{GB98}
+N. Gisin, H. Bechmann-Pasquinucci, Phys. Lett A {\bf 246}, 1
+(1998); D. Collins {\it et al.}, Phys. Rev. Lett. {\bf 88}, 170405
+(2002); M. Seevinck and G. Svetlichny, 
+Phys. Rev. Lett. {\bf 89}, 060401 (2002).
+\bibitem{W89} R.F. Werner, Phys. Rev. A {\bf 40}, 4277 (1989).
+% Witnesses
+\bibitem{HH90} M. Horodecki {\it et al.},
+Phys. Lett. A {\bf 223}, 1 (1996);
+B. M. Terhal, Phys. Lett. A {\bf 271}, 319 (2000);
+M. Lewenstein {\it et al.}, Phys. Rev. A {\bf 62}, 052310 (2000);
+D. Bru{\ss} {\it et al.}, J. Mod. Opt. {\bf 49}, 1399 (2002);
+ M. Bourennane {\it et al.},
+Phys. Rev. Lett. {\bf 92}, 087902, (2004).
+% GHZ state
+\bibitem{GH90} D.M. Greenberger {\it et al.},
+Am. J. Phys. {\bf 58}, 1131 (1990).
+%\bibitem{MWITNESS} This bound is usually obtained
+%from quantum mechanics. I.e., with the exception of
+%the method presented in Ref. \cite{SG02},
+%these inequalities are (not so
+%efficient) entanglement witnesses.
+% Short paper
+\bibitem{TG04} G. T\'oth and O. G\"uhne, quant-ph/0405165;
+quant-ph/0409132.
+\end{thebibliography}
+\end{document}
