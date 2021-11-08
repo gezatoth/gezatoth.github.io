@@ -1,0 +1,11 @@
+Géza Tóth from UPV/EHU.
+Title: Quantum states with a positive partial transpose are useful for metrology: numerical and analytical examples
+ 
+Abstract: We show that multipartite quantum states that have a positive partial transpose with respect to all bipartitions of the particles can outperform separable states in linear interferometers. We introduce a powerful iterative method to find such states. Some bipartite examples are shown that possess an entanglement very robust to noise. We also discuss the relation of metrological usefulness to Bell inequality violation.
+ 
+As analytical examples, we present two classes of (2d×2d)-dimensional PPT entangled states for any d≥2 which outperform all separable states in metrology significantly. We present strong evidence that our states provide the maximal metrological gain achievable by PPT states for a given system size. When the dimension d goes to infinity, the metrological gain of these states becomes maximal and equals the metrological gain of a pair of maximally entangled qubits. Thus, we argue that our states could be called "PPT singlets."
+ 
+[1] G. Tóth and T. Vértesi,
+Quantum states with a positive partial transpose are useful for metrology, Phys. Rev. Lett. 120, 020506 (2018).
+ 
+[2] K. F. Pál, G. Tóth, E. Bene, T. Vértesi, Bound entangled singlet-like states for quantum metrology, Phys. Rev. Res. 3, 023101 (2021).
