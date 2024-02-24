@@ -1,1004 +1,329 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Quantum Bilbao 2014</title>
+        <style>
+            /* Top menu */
+            <!-- body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            -->
 
-<!-- Mirrored from www.bilbaoquantum2014.eu/participants by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2017 19:36:08 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-<script type="text/javascript">/* Copyright 2008 Google. */ (function() { (function(){function e(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(h){}};this.tick("start",null,a)}var a,d;window.performance&&(d=(a=window.performance.timing)&&a.responseStart);var f=0<d?new e(d):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_","_wtsrt",d),
-b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
-</script>
-<link rel="shortcut icon" type="image/x-icon" href="http://www.google.com/images/icons/product/sites-16.ico" />
-<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/acd669/system/app/images/apple-touch-icon.png" type="image/png" />
-<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
-window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
-window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
-</script>
-<script>
+        /* Add a black background color to the top navigation */
+        .topnav {
+                overflow: hidden;
+                /*  background-color: #333;*/
+                background-color: white;
+            }
 
-  
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                /* color: #f2f2f2; */
+                color: blue;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                /* color: black; */
+                color: blue;
+            }
 
-  var breadcrumbs = [{"path":"/participants","deleted":false,"title":"Participants","dir":"ltr"}];
-  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/acd669/system/app/images/cleardot.gif';
+            /* Add a color to the active/current link */
+            <!--.topnav a.active {
+                /* background-color: #04aa6d;*/
+                background-color: lightblue;
+                /* color: white; */
+                color: blue;
+            }-->
 
-  
-  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+            .topnav a.active {
+                color: blue;
+                background-color: transparent;
+                border-bottom: 3px solid lightblue;
+             }
 
-  
-  
+            /* Two columns */
+            *{
+                box-sizing: border-box;
+            }
+            /* Create two equal columns that floats next to each other */
+            .column1 {
+                float: left;
+                width: 20%;
+                padding: 10px;
+            }
+            .column2 {
+                float: left;
+                width: 15%;
+                padding: 10px;
+            }
+            .column3 {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
 
-  
+            /* Margin for <p> */
+            p{
+               margin-left: 30px;
+               margin-right: 30px;
+           }
+        </style>
+    </head>
+    <body>
+        <!-- Top menu -->
+        <div class="topnav">
+            <a style="font-size:16px" href="home.html">HOME</a>
+            <a style="font-size:16px" href="program.html">PROGRAM</a>
+            <a class="active" style="font-size:16px" href="participants.html">PARTICIPANTS</a>
+            <a style="font-size:16px" href="registration.html">REGISTRATION/CONF. FEE</a>
+            <a style="font-size:16px" href="maps.html">MAP (CONF. SITE, HOTELS, ...)</a>
+            <a style="font-size:16px" href="travel.html">TRAVEL</a>
+            <a style="font-size:16px" href="tourism.html">TOURISM</a>
+        </div>
+        <p align="left">
+            Conference photo&nbsp;[<a href="DSC03399_small.JPG">small</a>]&nbsp;[<a href="DSC03399.JPG">large</a>]
+        </p>
 
-  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"bilbaoquantum2014","adsensePublisherId":null,"features":{"validateClientGvizDataSourceUrls":true,"contactStoreMigrationPollForGapi":true,"gapiLoaderUtil":true,"moreMobileStyleImprovements":true,"accumulativeBubblePanelCreation":true,"oAuthForChartsApi":true,"batchFileCabinetOperations":true,"fileCabinetScreenReaderFix":true,"picasaAlbumInsert":false,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":true,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue\u003dhttp://sites.google.com/site/bilbaoquantum2014/participants\u0026service\u003djotspot","analyticsAccountId":"UA-46271144-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/acd669/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/acd669/system/js/codemirror.js","http://www.gstatic.com/sites/p/acd669/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/acd669/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/acd669/system/app/css/trogedit.css","_/rsrc/1489651108000/system/app/css/editor.css","http://www.gstatic.com/sites/p/acd669/system/app/css/codeeditor.css","/_/rsrc/1489651108000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"","name":"bilbaoquantum2014","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":null,"parentWuid":null,"siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Participants","locale":"en","wuid":"wuid:gx:51c0e440b5a95f0d","revision":26,"path":"/participants","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"participants","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","onePickToken":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
-  webspace.page.breadcrumbs = breadcrumbs;
-
-  
-  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
-
-</script>
-<script type="text/javascript">
-                window.jstiming.load.tick('scl');
-              </script>
-<link rel="canonical" href="participants.html" />
-<meta name="title" content="Participants - bilbaoquantum2014" />
-<meta itemprop="name" content="Participants - bilbaoquantum2014" />
-<meta property="og:title" content="Participants - bilbaoquantum2014" />
-<style type="text/css">
-      
-      @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxp_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
-}
-
-    
-    </style>
-<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/acd669/system/app/themes/ski/standard-css-ski-ltr-ltr.css" />
-<link rel="stylesheet" type="text/css" href="_/rsrc/1489651108000/system/app/css/overlaye13d.css?cb=ski3a%25150goog-ws-nav-noside-noheadnone30middlecenter" />
-<link rel="stylesheet" type="text/css" href="_/rsrc/1489651108000/system/app/css/camelot/allthemes-view.css" />
-<!--[if IE]>
-          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
-        <![endif]-->
-<title>Participants - bilbaoquantum2014</title>
-<meta itemprop="image" content="/_/rsrc/1381356557305/config/customLogo.gif?revision=1" />
-<meta property="og:image" content="/_/rsrc/1381356557305/config/customLogo.gif?revision=1" />
-<script type="text/javascript">
-                window.jstiming.load.tick('cl');
-              </script>
-</head>
-<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
-<div id="sites-page-toolbar" class="sites-header-divider">
-<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
-</div>
-<div id="sites-chrome-everything-scrollbar">
-<div id="sites-chrome-everything" class="">
-<div id="sites-chrome-page-wrapper" style="direction: ltr">
-<div id="sites-chrome-page-wrapper-inside">
-<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
-<table id="sites-chrome-header" class="sites-layout-hbox-centered" cellspacing="0" style="height:auto;">
-<tr class="sites-header-primary-row" id="sites-chrome-userheader">
-</tr>
-<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
-<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
-<div class="sites-header-nav"><ul class="sites-header-nav-container-tabs"><li class="unselected"><a class="sites-navigation-link unselected" href="home.html">Home</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="program.html">Program</a></li><li class="current"><a class="sites-navigation-link current" href="participants.html">Participants</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="registration.html">Registration/Conf. Fee</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="maps.html">Map (Conf. Site, Hotels, ...)</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="travel.html">Travel</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="tourism.html">Tourism</a></li></ul><div style="clear: both;"></div></div>
-</td>
-</tr>
-</table>
-</div>
-<div id="sites-chrome-main-wrapper">
-<div id="sites-chrome-main-wrapper-inside">
-<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
-<tr>
-<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left" style="display: none; width: 150px">
-<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="home.html" jotId="wuid:gx:7ea0d4efab6513be" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="maps.html" jotId="wuid:gx:2a1b16995d3332cf" class="sites-navigation-link">Map (Conf. Site, Hotels, ...)</a></div></li><li class=""><div class="current-bg" jotId="wuid:gx:51c0e440b5a95f0d" dir="ltr" style="padding-left: 5px;">Participants</div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="posters.html" jotId="wuid:gx:4bd049b9cdc75f5a" class="sites-navigation-link">Poster session</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="presentations.html" jotId="wuid:gx:e6ab9b95f7a8672" class="sites-navigation-link">Presentations</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="presentations2.html" jotId="wuid:gx:678705e94cf5fead" class="sites-navigation-link">presentations2</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="program.html" jotId="wuid:gx:7d20e42db734c450" class="sites-navigation-link">Program</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="registration.html" jotId="wuid:gx:370c31a0524c0dbf" class="sites-navigation-link">Registration/Conf. Fee</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="tourism.html" jotId="wuid:gx:507084a48fccae25" class="sites-navigation-link">Tourism</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="travel.html" jotId="wuid:gx:3b773b71d2386af3" class="sites-navigation-link">Travel</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:1e52e95923cc7ff3" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
-</td>
-<td id="sites-canvas-wrapper">
-<div id="sites-canvas" role="main">
-<div id="goog-ws-editor-toolbar-container"> </div>
-<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="display: none;">
-</div>
-<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="display: none;" align="left">
-<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Participants</span>
-</h3>
-<div id="sites-canvas-main" class="sites-canvas-main">
-<div id="sites-canvas-main-content">
-<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div></div><div></div><div><font face="times new roman, serif" size="4">Conference photo <font style="background-color:transparent">[<a href="https://drive.google.com/file/d/0B0c3vCwp90arcUQ4QWpBTlE3Z0E/edit?usp=sharing">small</a>] [<a href="https://drive.google.com/file/d/0B0c3vCwp90arb0pDdkhRWDUwcVk/edit?usp=sharing">large</a></font><span style="background-color:transparent;line-height:1.5">]</span></font></div><div><br /><table cellpadding="0" cellspacing="0" style="border-collapse:collapse"><tbody><tr><td style="width:109.0px;height:17.0px" valign="top"><p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Antonio</font></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Acín</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;line-height:normal"><font size="2">ICFO, Barcelona</font></span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Abhishek</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Anchal</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Indian Institute of Technology, Kanpur</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Iagoba</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Apellaniz</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;line-height:normal"><font size="2">UPV/EHU, Bilbao</font></span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Ali</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Asadian</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Atominstitut, Vienna</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Dorian</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Baguette</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Université de Liège</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Thierry</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Bastin</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font size="2"><font color="#000000" face="Helvetica" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">University of </font><span style="font-family:Helvetica;line-height:normal;background-color:transparent">Liège</span></font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Dagmar</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Bruß</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">HHU Düsseldorf</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Costantino</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Budroni</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Universität Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Daniel</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Cariello</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Universidad Complutense de Madrid</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Marc</font></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Cheneau</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Institut d'Optique, Paris</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Marti</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Cuquet</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Institut für Theoretische Physik, Universität Innsbruck</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Jibo</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Dai</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top"><p style="margin:0.0px 0.0px 0.0px 0.0px"><font size="2"><span style="color:rgb(34,34,34);font-family:arial,sans-serif;line-height:16.1200008392334px;background-color:transparent">Centre for Quantum Technologies</span><font color="#000000" face="Helvetica" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">, NUS, Singapore</font></font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Jacob</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Dunningham</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Sussex</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Arijit</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">Dutta</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" size="2" style="line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Gdansk</font></p>
-</td>
-</tr><tr><td><font size="2">Iñigo Luis</font></td><td><font size="2">Egusquiza<span>    <span>    <span>    <span>  </span></span></span></span> </font></td><td><font size="2">UPV/EHU, Bilbao</font></td></tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Christopher</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Eltschka</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Unversität Regensburg</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Nicolae</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Enaki</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Institute of Applied Physics of Academy of Sciences of Moldova</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Umer</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Farooq</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Camerino, Italy</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sergey</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Filippov</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Russian Quantum Center &amp; Moscow Institute of Physics and Technology</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Aurél</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Gábris</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Czech Technical University</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Manuel</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Gessner</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Freiburg</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Salvatore Marco</font></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Giampaolo</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Wien</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Oleg</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Gittsovich</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Institute for Theoretical Physics, University of Innsbruck</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sebastian</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Hild</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Max-Planck-Institut für Quantenoptik</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Martin</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Hofmann</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universität Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Marcus</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Huber</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universitat Autonoma de Barcelona</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Fabrizio</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Illuminati</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Salerno University</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Mohsin</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Jamil</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of the Punjab</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Fedor</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Jelezko</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Ulm University</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Hermann</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Kampermann</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">HHU Düsseldorf</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Nathan</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Killoran</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Ulm</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Carsten</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Klempt</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Hannover</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Barbara</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Kraus</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Institut für Theoretische Physik, Universität Innsbruck</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Stefan</font></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Kuhr</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Strathclyde</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Yeong-Cherng</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Liang</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">ETH Zürich</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Paraschiv</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Marius</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Oliver</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Marty</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Institut für Theoretische Physik, Universität Ulm</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Safoura Sadat</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Mirkhalaf</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Florence, Italy, and LENS</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Morgan</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Mitchell</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;font-size:12px;line-height:normal">ICFO, Barcelona</span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Tobias</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Moroder</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Markus</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Oberthaler</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Heidelberg</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Roman</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Orus</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Johannes-Gutenberg-Universität Mainz</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Omar</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Osenda</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Facultad de Matematica, Astronomia y Fisica, Universidad Nacional de Cordoba</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Andreas</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Osterloh</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universitaet Duisburg-Essen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Julen S.</font></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Pedernales</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of the Basque Country UPV/EHU</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Pablo</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Poggi</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universidad de Buenos Aires</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Phil</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Richerme</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Maryland &amp; NIST</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Christina </font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Ritz</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universität Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Junghee</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Ryu</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Gdansk</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Anna</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sanpera</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universitat Autonoma de Barcelona</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Mikel</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sanz</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of the Basque Country</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Roman</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Schmied</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Basel</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Katharina</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Schwaiger</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Institute for Theoretical Physics, University of Innsbruck</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Christian</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Schwemmer</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Max-Planck-Institut für Quantenoptik</font></p>
-</td>
-</tr><tr><td><font face="arial, sans-serif" size="2">Rob</font></td><td><font face="arial, sans-serif" size="2">Sewell</font></td><td><font face="arial, sans-serif" size="2">ICFO,  Barcelona</font></td></tr>
-<tr>
-<td style="width:109.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;font-size:12px;letter-spacing:0px;line-height:normal;background-color:transparent">Ritabrata</span></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sengupta</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Indian Institute of Science Education &amp; Research </font><span style="font-family:Helvetica;font-size:12px;line-height:normal;background-color:transparent">(IISER)</span><span style="font-family:Helvetica;font-size:12px;letter-spacing:0px;line-height:normal;background-color:transparent">, Mohali, India</span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Jens</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Siewert</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;font-size:12px;line-height:normal">UPV/EHU, Bilbao</span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Augusto</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Smerzi</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">CNR-INO &amp; LENS, Florence</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Florian</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sokoli</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Fachbereich Mathematik, Technische Universität Darmstadt</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">André</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Stefanov</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Bern, Institute of Applied Physics</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Frank</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Steinhoff</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Universität Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Andrea</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Tabacchini</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Macquarie University, Sydney, Australia</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Luca</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Tagliacozzo</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;font-size:12px;line-height:normal">ICFO, Barcelona</span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Lara</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Torralbo-Campo</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Amsterdam</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Iñigo</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Urizar-Lanz</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">UPV/EHU, Bilbao</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Giuseppe</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Vitagliano</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;font-size:12px;line-height:normal">UPV/EHU, Bilbao</span></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Harald</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Weinfurter</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">LMU and MPQ, München</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Till</font></p>
-</td>
-<td style="width:111.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Weinhold</font></p>
-</td>
-<td style="width:429.0px;height:17.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Queensland</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Sabine</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Wölk</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Christof</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Wunderlich</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">University of Siegen</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Mario</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Ziman</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Slovak Academy of Sciences</font></p>
-</td>
-</tr>
-<tr>
-<td style="width:109.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Zoltán</font></p>
-</td>
-<td style="width:111.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><font color="#000000" face="Helvetica" style="font-size:12px;line-height:normal;font-family:Helvetica;letter-spacing:0px">Zimborás</font></p>
-</td>
-<td style="width:429.0px;height:18.0px" valign="top">
-<p style="margin:0.0px 0.0px 0.0px 0.0px"><span style="font-family:Helvetica;font-size:12px;line-height:normal">UPV/EHU, Bilbao</span></p>
-</td>
-</tr><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr>
-</tbody>
-</table></div></div></td></tr></tbody></table>
-</div> 
-</div> 
-<div id="sites-canvas-bottom-panel">
-<div id="sites-attachments-container">
-</div>
-</div>
-</div> 
-</td> 
-</tr>
-</table> 
-</div> 
-</div> 
-<div id="sites-chrome-footer-wrapper">
-<div id="sites-chrome-footer-wrapper-inside">
-<div id="sites-chrome-footer">
-</div>
-</div>
-</div>
-</div> 
-</div> 
-<div id="sites-chrome-adminfooter-container">
-<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?continue=http://sites.google.com/site/bilbaoquantum2014/participants&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://sites.google.com/site/bilbaoquantum2014/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/">Google Sites</a></b></p></div>
-</div>
-</div> 
-</div> 
-<div id="sites-chrome-onebar-footer">
-</div>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    window.jstiming.load.tick('sjl');
-  </script>
-<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/acd669/system/js/jot_min_view__en.js"></script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    window.jstiming.load.tick('jl');
-  </script>
-<script xmlns="http://www.w3.org/1999/xhtml">
-      
-          sites.core.Analytics.createTracker();
-          sites.core.Analytics.trackPageview();
-        
-    </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
-    </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-            JOT_setupNav("2bd", "Navigation", true);
-            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
-          </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-  setTimeout(function() {
-    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
-    gsites.Xhr.send('_/tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
-  }, 500);
-</script>
-<script xmlns="http://www.w3.org/1999/xhtml">
-                    window.onload = function() {
-                      if (false) {
-                        JOT_setMobilePreview();
-                      }
-                      var loadTimer = window.jstiming.load;
-                      loadTimer.tick("ol");
-                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
-                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
-                    }
-                  </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-        JOT_insertAnalyticsCode(false,
-            false);
-      </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
-        webspace, "en");
-    maestroRunner.initListeners();
-    maestroRunner.installEditRender();
-  </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-  //<![CDATA[
-    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
-    if (webspace.user.hasWriteAccess) {
-      JOT_decorateButtons();
-    }
-
-    // Fires delayed events.
-    (function() {
-      JOT_fullyLoaded = true;
-      var delayedEvents = JOT_delayedEvents;
-      for (var x = 0; x < delayedEvents.length; x++) {
-        var event = delayedEvents[x];
-        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
-      }
-      JOT_delayedEvents = null;
-      JOT_postEvent('pageLoaded');
-    })();
-  //]]>
-</script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    JOT_postEvent('decorateGvizCharts');
-  </script>
-<script type="text/javascript">
-          JOT_setupPostRenderingManager();
-        </script>
-<script type="text/javascript">
-          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
-        </script>
-<div id="server-timer-div" style="display:none"> </div>
-<script type="text/javascript">
-          window.jstiming.load.tick('render');
-          JOT_postEvent('usercontentrendered', this);
-        </script>
-</body>
-
-<!-- Mirrored from www.bilbaoquantum2014.eu/participants by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2017 19:36:08 GMT -->
+        <div class="row">
+            <div class="column1">
+                <p> Antonio<br>
+Abhishek<br>
+Iagoba<br>
+Ali<br>
+Dorian<br>
+Thierry<br>
+Dagmar<br>
+Costantino<br>
+Daniel<br>
+Marc<br>
+Marti<br>
+Jibo<br>
+Jacob<br>
+Arijit<br>
+Iñigo Luis<br>
+Christopher<br>
+Nicolae<br>
+Umer<br>
+Sergey<br>
+Aurél<br>
+Manuel<br>
+Salvatore Marco<br>
+Oleg<br>
+Sebastian<br>
+Martin<br>
+Marcus<br>
+Fabrizio<br>
+Mohsin<br>
+Fedor<br>
+Hermann<br>
+Nathan<br>
+Carsten<br>
+Barbara<br>
+Stefan<br>
+Yeong-Cherng<br>
+Paraschiv<br>
+Oliver<br>
+Safoura Sadat<br>
+Morgan<br>
+Tobias<br>
+Markus<br>
+Roman<br>
+Omar<br>
+Andreas<br>
+Julen S.<br>
+Pablo<br>
+Phil<br>
+Christina<br>
+Junghee<br>
+Anna<br>
+Mikel<br>
+Roman<br>
+Katharina<br>
+Christian<br>
+Rob	<br>
+Ritabrata<br>
+Jens<br>
+Augusto<br>
+Florian<br>
+André<br>
+Frank<br>
+Andrea<br>
+Luca<br>
+Lara<br>
+Iñigo<br>
+Giuseppe<br>
+Harald<br>
+Till<br>
+Sabine<br>
+Christof<br>
+Mario<br>
+Zoltán<br>
+                </p>
+            </div>
+            <div class="column2">
+              <p> Acín<br>
+Anchal<br>
+Apellaniz<br>
+Asadian<br>
+Baguette<br>
+Bastin<br>
+Bruß<br>
+Budroni<br>
+Cariello<br>
+Cheneau<br>
+Cuquet<br>
+Dai<br>
+Dunningham<br>
+Dutta<br>
+Egusquiza<br>
+Eltschka<br>
+Enaki<br>
+Farooq<br>
+Filippov<br>
+Gábris<br>
+Gessner<br>
+Giampaolo<br>
+Gittsovich<br>
+Hild<br>
+Hofmann<br>
+Huber<br>
+Illuminati<br>
+Jamil<br>
+Jelezko<br>
+Kampermann<br>
+Killoran<br>
+Klempt<br>
+Kraus<br>
+Kuhr<br>
+Liang<br>
+Marius<br>
+Marty<br>
+Mirkhalaf<br>
+Mitchell<br>
+Moroder<br>
+Oberthaler<br>
+Orus<br>
+Osenda<br>
+Osterloh<br>
+Pedernales<br>
+Poggi<br>
+Richerme<br>
+Ritz<br>
+Ryu<br>
+Sanpera<br>
+Sanz<br>
+Schmied<br>
+Schwaiger<br>
+Schwemmer<br>
+Sewell<br>
+Sengupta<br>
+Siewert<br>
+Smerzi<br>
+Sokoli<br>
+Stefanov<br>
+Steinhoff<br>
+Tabacchini<br>
+Tagliacozzo<br>
+Torralbo-Campo<br>
+Urizar-Lanz<br>
+Vitagliano<br>
+Weinfurter<br>
+Weinhold<br>
+Wölk<br>
+Wunderlich<br>
+Ziman<br>
+Zimborás<br>
+              </p>
+            </div>
+            <div class="column3">
+              <p> ICFO, Barcelona<br>
+Indian Institute of Technology, Kanpur<br>
+UPV/EHU, Bilbao<br>
+Atominstitut, Vienna<br>
+Université de Liège<br>
+University of Liège<br>
+HHU Düsseldorf<br>
+Universität Siegen<br>
+Universidad Complutense de Madrid<br>
+Institut d'Optique, Paris<br>
+Institut für Theoretische Physik, Universität Innsbruck<br>
+Centre for Quantum Technologies, NUS, Singapore<br>
+University of Sussex<br>
+University of Gdansk<br>
+UPV/EHU, Bilbao<br>
+Unversität Regensburg<br>
+Institute of Applied Physics of Academy of Sciences of Moldova<br>
+University of Camerino, Italy<br>
+Russian Quantum Center & Moscow Institute of Physics and Technology<br>
+Czech Technical University<br>
+University of Freiburg<br>
+University of Wien<br>
+Institute for Theoretical Physics, University of Innsbruck<br>
+Max-Planck-Institut für Quantenoptik<br>
+Universität Siegen<br>
+Universitat Autonoma de Barcelona<br>
+Salerno University<br>
+University of the Punjab<br>
+Ulm University<br>
+HHU Düsseldorf<br>
+University of Ulm<br>
+University of Hannover<br>
+Institut für Theoretische Physik, Universität Innsbruck<br>
+University of Strathclyde<br>
+ETH Zürich<br>
+University of Siegen<br>
+Institut für Theoretische Physik, Universität Ulm<br>
+University of Florence, Italy, and LENS<br>
+ICFO, Barcelona<br>
+University of Siegen<br>
+University of Heidelberg<br>
+Johannes-Gutenberg-Universität Mainz<br>
+Facultad de Matematica, Astronomia y Fisica, Universidad Nacional de Cordoba<br>
+Universitaet Duisburg-Essen<br>
+University of the Basque Country UPV/EHU<br>
+Universidad de Buenos Aires<br>
+University of Maryland & NIST<br>
+Universität Siegen<br>
+University of Gdansk<br>
+Universitat Autonoma de Barcelona<br>
+University of the Basque Country<br>
+University of Basel<br>
+Institute for Theoretical Physics, University of Innsbruck<br>
+Max-Planck-Institut für Quantenoptik<br>
+ICFO,  Barcelona<br>
+Indian Institute of Science Education & Research (IISER), Mohali, India<br>
+UPV/EHU, Bilbao<br>
+CNR-INO & LENS, Florence<br>
+Fachbereich Mathematik, Technische Universität Darmstadt<br>
+University of Bern, Institute of Applied Physics<br>
+Universität Siegen<br>
+Macquarie University, Sydney, Australia<br>
+ICFO, Barcelona<br>
+University of Amsterdam<br>
+UPV/EHU, Bilbao<br>
+UPV/EHU, Bilbao<br>
+LMU and MPQ, München<br>
+University of Queensland<br>
+University of Siegen<br>
+University of Siegen<br>
+Slovak Academy of Sciences<br>
+UPV/EHU, Bilbao<br>
+              </p>
+            </div>
+        </div>
+    </body>
 </html>
