@@ -1,0 +1,216 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+%SetFonts
+%SetFonts
+
+\title{Quantum Information Class 2024}
+\author{Geza Toth}
+\date{\today}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{center}
+See  \href{https://www.gtoth.eu/courses.html}{https://www.gtoth.eu/courses.html}
+\end{center}
+
+\begin{itemize}
+
+\item Introduction
+
+\item General characteristics of multi-partite quantum systems
+\begin{itemize}
+\item Statistics of classical bits, probabilistic logic by von Neumann
+\item Quantum bits - a comparison with the statistics of classical bits
+\item Geometry of quantum quantum states
+\begin{itemize}
+\item Bloch vector for $d=2$ (a single qubits)
+\item Bloch vector for $d>2$
+\end{itemize}
+\item Convexity of the set of quantum states 
+\begin{itemize}
+\item Quantum states with full rank are inside the set, with derivation
+\item Quantum states with non-full rank are on the boundary, with derivation
+\end{itemize}
+\item Reduced states, partial trace
+\item Schmidt decomposition for bipartite pure states
+\item Purification
+\item Entropy
+\begin{itemize}
+\item Shannon entropy
+\item Von Neumann entropy, main properties.
+\begin{itemize}
+\item Prove concavity with Klein’s inequality
+\item prove that it is additive for independent systems
+\item Prove subadditivity.
+\item Araki-Lieb inequality (mention)
+\item Strongly subadditive (mention)
+ \end{itemize} 
+\item Quantum conditional entropy
+\item Quantum mutual information
+\item Quantum relative entropy, properties, including monotonicity under CP maps.
+\item Linear entropy, relation to von Neumann entropy via the Mercator series
+\end{itemize} 
+\item Quantum Fidelity and its properties
+\item Distances (Bures distance, Hilbert-Schmidt distance, Trace distance)
+\end{itemize}
+
+\item Interesting quantum states
+\begin{itemize}
+\item Single-particle states
+\item Bipartite singlet state, invariance under $U \otimes U$
+\item Werner state, invariance under $U \otimes U$, full set
+\item Isotropic state. invariance under $U \otimes U^*$
+\item Schrödinger cat state
+\item GHZ state and its stabilizer group (xxx,zz1,z1z,1zz,etc.)
+\item W state
+\item Symmetric Dicke state and its defining properties
+\end{itemize}
+
+\item Bell inequalities
+\begin{itemize}
+\item EPR paradox
+\item LHV models
+\item CHSH inequality
+\item Mermin's inequality
+\item Loopholes (Detection efficiency loophole, locality loophole)
+\end{itemize}
+
+\item Paper review: Gregor Weihs, Thomas Jennewein, Christoph Simon, Harald Weinfurter, and Anton Zeilinger, Violation of Bell’s Inequality under Strict Einstein Locality Conditions, Phys. Rev. Lett. 81, 5039  (1998)
+
+\item Paper review: J. Yin, Y. Cao, Y.-H. Li et al., Satellite-based entanglement distribution over 1200 kilometers, Science 356, 1140-1144 (2017)
+
+\item Entanglement theory (entangled/not entangled)
+\begin{itemize}
+\item Bipartite case
+\begin{itemize}
+\item Pure states
+\item Mixed states (Werner  1989)
+\end{itemize}
+\item Entanglement criteria
+\begin{itemize}
+\item Partial transposition, with derivation 
+\item Entanglement witnesses, several examples, e.g., witness derived for any pure state
+\item Variance-based criteria, e.g., the well known criterion\\ ${\rm var}(x_1-x_2)+{\rm var}(p_1+p_2)>2.$
+\item Multipartite case
+\end{itemize}
+\end{itemize}
+
+\item Entanglement measures (How much is it entangled?)
+\begin{itemize}
+\item General quantum operation
+\item Local operations and classical communication (LOCC)
+\item Entanglement of formation
+\item Concurrence
+\item Entanglement of distillation
+\item Bound entanglement (prove that it cannot be distilled to singlets, and its overlap with singlets is small)
+\item Requirements for entanglement measures
+\item Negativity
+\end{itemize}
+
+\item No-cloning theorem and related issues
+\begin{itemize}
+\item No cloning theorem
+\item Measurement problem
+\item Quantum teleportation
+\item Quantum money
+\item Quantum cryptography (BB84, E91)
+\item Error correction (bit flip code, phase-flip code, Shore code)
+\end{itemize}
+
+\item Paper review: D. Bouwmeester, J.-W. Pan, K. Mattle, M. Eibl, H. Weinfurter, A. Zeilinger, Experimental quantum teleportation, Nature 390, 575-579 (1997).
+
+\item Quantum metrology
+\begin{itemize}
+\item Simple examples of quantum metrology
+\begin{itemize}
+\item Classical case: Clock arm
+\item Quantum case: Single spin-1/2 particle
+\item Magnetometry with the fully polarized state
+\item Magnetometry with the spin-squeezed state
+\item Metrology with the GHZ state
+\item Dicke states
+\item Interferometry with squeezed photonic states
+\end{itemize}
+\item Entanglement theory
+\begin{itemize}
+\item Multipartite entanglement
+\item The spin-squeezing criterion
+\end{itemize}
+\item Quantum metrology using the quantum Fisher information
+\begin{itemize}
+\item Quantum Fisher information
+\item Quantum Fisher information in linear interferometers
+\item Noise and imperfections
+\end{itemize}
+\end{itemize}
+
+\item Paper review: Event-Ready Bell Test Using Entangled Atoms Simultaneously Closing Detection and Locality Loopholes, Wenjamin Rosenfeld, Daniel Burchardt, Robert Garthoff, Kai Redeker, Norbert Ortegel, Markus Rau, and Harald Weinfurter
+Phys. Rev. Lett. 119, 010402 (2017).
+
+\item Semidefinite programming
+\begin{itemize}
+\item Linear programming
+\item Semidefinite programming
+\item Solvable vs. not solvable by SDP
+\item Basic optimization tasks solvable by SDP, for instance,
+\begin{itemize}
+\item $N$-representability problem (on small systems)
+\item Maximum of an operator expectation value for a set given by constraints
+\item Maximum of an operator expectation value for PPT states
+\item Minimizing an expression given as the sum of expectation value squares
+\end{itemize}
+\end{itemize}
+ 
+\end{itemize}
+
+Literature:
+
+\begin{itemize}
+
+\item I. Bengtsson and K. Zyczkowski, Geometry of Quantum States, An Introduction to Quantum Entanglement, Cambridge University Press, 2009. 
+
+\item R. Horodecki, P. Horodecki, M. Horodecki, and K. Horodecki, Quantum entanglement, Rev. Mod. Phys. 81, 865 (2009).
+
+\item O. Gühne and G. Tóth, Entanglement detection, Phys. Rep. 474, 1 (2009); arxiv:0811.2803.
+
+\item G. Tóth and I. Apellaniz, Quantum metrology from a quantum information science perspective, J. Phys. A: Math. Theor. 47, 424006 (2014), special issue "50 years of Bell's theorem"; arxiv:1405.4878.
+
+\end{itemize}
+\end{document}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
